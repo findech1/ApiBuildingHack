@@ -12,16 +12,24 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: #023140;
   color: #fff;
   padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
-  margin-right: 10px;
+  color: #fff;
+  margin: 0 10px; /* Add margin between navigation links */
 }
+
+nav a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 
 .container {
   display: flex;
