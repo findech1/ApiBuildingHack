@@ -1,37 +1,40 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'styles.css'%}">
-  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <title>Random Page</title>
 </head>
 <body>
   <nav>
-      <a href="{% url 'home' %}">Home</a>
-      <a href="{% url 'about' %}">About</a>
-      <a href="{% url 'fact' %}">Fact</a>
-      <a href="{% url 'student' %}">Student</a>
-      <a href="{% url 'dog' %}">Dog</a>
-
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'fact' %}">Fact</a>
+    <a href="{% url 'student' %}">Student</a>
+    <a href="{% url 'dog' %}">Dog</a>
   </nav>
 
-  <!-- Using CSS, style the random fact, Random Student, & Random Image -->
-  <!-- Use your own colors create cards for the random facts and students,  -->
-  <!-- Pro Tip: You can use multiple pages -->
-  <!-- Pro Tip: Impliment a  refresh/reload button in every page  -->
-  <h1>Random Fact</h1>
-  {{fact}}
+  <div class="container">
+    <div class="card">
+      <h1>Random Fact</h1>
+      <p>{{ fact }}</p>
+      <button class="refresh-btn" onclick="location.reload()">Refresh</button>
+    </div>
 
-  <h1>Random Student</h1>
-  {{name}}
+    <div class="card">
+      <h1>Random Student</h1>
+      <p>{{ name }}</p>
+      <button class="refresh-btn" onclick="location.reload()">Refresh</button>
+    </div>
 
-
-  <h1>Random Image</h1>
-
-  <img src="{{dog}}" alt="">
-  <!-- {{dog}} -->
+    <div class="card">
+      <h1>Random Image</h1>
+      <img src="{{ dog }}" alt="">
+      <button class="refresh-btn" onclick="location.reload()">Refresh</button>
+    </div>
+  </div>
 </body>
 </html>
