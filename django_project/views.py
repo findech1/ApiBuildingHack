@@ -1,5 +1,7 @@
+from django.shortcuts import render
+from django.http import JsonResponse
 import requests
-from django.shortcuts import render 
+import random
 
 def index(request):
   response = requests.get('https://uselessfacts.jsph.pl/random.json?language=en')
