@@ -2,8 +2,10 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <h1>Welcome to the Students Page</h1>
-<h1>Random Student</h1>
-{{name}}
-    <!-- Add home page content here -->
+<div class="card">
+  <h1>Random Student</h1>
+  <p>{{ name }}</p>
+  <button class="refresh-btn" onclick="location.reload()">Refresh</button>
+</div>
+    
 {% endblock %}

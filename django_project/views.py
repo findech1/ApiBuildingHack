@@ -17,8 +17,7 @@ def index(request):
 
   return render(request, 'templates/index.html', {'fact': fact, 'dog': dog,  'name': name})
 
-def base(request):
-  return render(request, 'templates/base.html')
+
 def home(request):
   return render(request, 'templates/home.html')
 def about(request):

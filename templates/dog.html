@@ -3,9 +3,9 @@
 {% extends 'index.html' %}
 
 {% block content %}
-<h1>Welcome to the Dogs Page</h1>
-<h1>Random Image</h1>
-
-<img src="{{dog}}" alt="">
-    <!-- Add home page content here -->
+<div class="card">
+  <h1>Random Image</h1>
+  <img src="{{ dog }}" alt="">
+  <button class="refresh-btn" onclick="location.reload()">Refresh</button>
+</div>
 {% endblock %}
