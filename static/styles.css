@@ -1,0 +1,25 @@
+h1{
+  color: #008f99;
+  font-size: 50px
+  
+}
+
+
+img{
+  width: 100px;
+  height: 100px
+}
+nav{
+  align-items:center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #008f99;
+  height: 30px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration-color:#008f99;
+  
+  
+  
+}
