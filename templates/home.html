@@ -1,5 +1,4 @@
-<!-- home.html -->
-{% extends 'index.html' %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,9 +36,9 @@
     <h1>Welcome to Our Website</h1>
     <p>This website is designed to provide you with valuable information and resources.</p>
     <p>Whether you're a beginner or an expert, you'll find something useful here to enhance your knowledge and skills.</p>
-    <div class="link">
-      <a href="{% url 'index' %}">Continue to Index Page</a>
+    
     </div>
   </div>
 </body>
 </html>
+{% endblock %}
