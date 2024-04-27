@@ -29,7 +29,12 @@ nav a {
 nav a:hover {
   text-decoration: underline; /* Add underline on hover */
 }
-
+nav h1{
+  font-size: 20px;
+  margin: 0 10px; /* Add margin between navigation links */
+  align-content: flex-start;
+  color: #fff;
+}
 
 .container {
   display: flex;
@@ -45,6 +50,11 @@ nav a:hover {
   padding: 20px;
   margin: 10px;
   max-width: 300px;
+}
+
+#dog {
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  height: auto; /* Allows the image to maintain its aspect ratio */
 }
 
 h1 {
@@ -63,5 +73,5 @@ h1 {
 }
 
 .refresh-btn:hover {
-  background-color: #45a049;
+  background-color: #023140;
 }
